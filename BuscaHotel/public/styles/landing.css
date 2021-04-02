@@ -1,0 +1,592 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body{
+    background-color: rgb(34, 64, 109);
+}
+
+/*HEADER - espaçamento e componentes*/
+
+header{
+    position:static;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    height: 57px;
+    padding:0px;
+    margin:0px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+}
+
+header h1{
+    padding: 0px 10px 0px 10px;
+    font-size: 2em;
+    color: white;
+    background-color: rgb(1, 7, 14);
+}
+
+header img.logo{
+    height: 60px;
+    width:200px
+}
+
+/*HEADER - CRIAÇÃO DO BOTÃO DE MENU e deixando-o invisivel*/
+
+header button{
+    display: none;
+    float:inline-end; 
+}
+
+/*MENU LISTA - LINKS*/
+
+#menu{
+    background-color:rgb(255, 255, 255);
+}
+
+#menu ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background-color: unset;
+    opacity: .9;
+    transition: .2s;
+}
+
+#menu ul li{
+    display: inline;
+    margin: 0px;
+}
+
+#menu ul li a{
+    padding: 15px;
+    width: 110px;
+    display: inline-block;
+    text-decoration: none; 
+    border-bottom: 3px solid rgb(0, 0, 0);
+    color:rgb(8, 8, 8);
+}
+
+#menu a:hover{
+    opacity: 1;
+    transition: .5s;
+    background-color: rgb(40, 91, 185);
+    color:white;
+    cursor: pointer;
+}
+
+#menu ul li .buy{
+    width: 134px;
+    color: white;
+    background: rgb(0, 0, 0);
+    opacity: .9;
+    transition: .6s;
+}
+
+#menu ul li .buy:hover{
+    opacity: 1;
+}  
+
+/*PRIMEIRA PARTE DO CORPO DO SITE*/
+
+#topmain{
+    text-align: center;
+    padding: 25px 0px 0px 0px;
+}
+
+#topmain h1{
+    text-align: center;
+    font-size: 1.3em;
+    padding: 10px;
+    background-color: white;
+}
+
+/*PARTE PRINCIPAL DO SITE*/
+
+#topmain section{
+    padding: 15px 15px 0px 15px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*DEFININDO O TAMANHO DO "VIDEO"*/
+
+.videoframe img{
+    width: 560px;
+    height: 360px;
+}
+
+/*ESTILIZANDO O BOTÃO DE DOWNLOAD*/
+
+.download{
+    padding: 10px;
+    margin: 0px;
+    width: 275px;
+    position: relative;
+    left: 270px;
+    bottom: 0px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.blue{
+    color: rgb(54, 103, 219);
+}
+
+/*LINK DO DOWNLOAD*/
+
+.download a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.download a{
+    font-size: 1em;
+}
+
+.download small{
+    font-size: .8em;
+}
+
+/*CAIXA DE PESQUISA E DESCRIÇÃO*/
+
+
+.searchbox{
+    padding: 15px;
+}
+
+.searchbox p{
+    padding-top: 15px;
+    color: white;
+}
+
+/*ESTILIZANDO O FORMULÁRIO*/
+
+.searchbox #form input{
+    padding: 9px;
+    margin-right: 8px;
+    color:black;
+    font-size: 1.2em;
+    border-radius: .5rem;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+}
+
+.searchbox #form button{
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    color: white;
+    background: #2a8eb3;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    opacity: .9;
+    border-radius: .5rem;
+}
+
+.searchbox #form button:hover{
+    opacity: 1;
+    background-color: #2a8eb3c4;
+}
+
+/*SEGUNDA PARTE DO SITE*/
+
+#intermain{
+    background-color: rgb(96, 96, 197);
+}
+
+#intermain h2,
+h2{
+    padding:10px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/*SEÇÃO DE CARDS COM CIDADES*/
+
+#intermain .locations{
+    padding: 15px 0px 15px 0px;
+    margin:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/*ESTILIZANDO OS CARDS*/
+
+#intermain .locations .locationbox{
+    width: 382px;
+    padding: 10px;
+    margin: 15px;
+    background-color: white; 
+}
+
+#intermain .locations .locationbox img{
+    height: 200px;
+    width:100%;
+}
+
+/*LINKS DOS CARDS*/
+
+a.subtitle{
+    color:black;
+    text-decoration: none;
+    font-size: 1.3em;  
+}
+
+/*TERCEIRA PARTE - MEIO DO SITE*/
+
+/*SEÇÃO DOS CARDS DE QUARTOS*/
+#midmain{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    justify-content:space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(95, 115, 177);
+}
+
+/*ESTILIZANDO OS CARDS DE QUARTOS*/
+.others{
+    width: 382px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: .8rem;
+}
+
+/*DEFININDO O TAMANHO DAS IMAGENS*/
+
+.others img{
+    height: 230px;
+    width: 100%;
+}
+
+/*RODAPÉ DOS CARDS*/
+
+.otherbottom{
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.baseother{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*ESTILIZANDO A LISTA - RODAPÉ DOS CARDS*/
+
+.baseother ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+/*ESTILIZANDO OS COMPONENTES DA LISTA -  RODAPÉ DOS CARDS*/
+
+.baseother ul li{
+    margin: 0px;
+    display: inline;
+    opacity: .9;
+    transition: .2s;
+    background-color: #03c06e;
+}
+
+.baseother ul li:hover{
+    text-decoration: none;
+    background-color: #08834d;
+}
+
+.baseother ul li a:hover{
+    color:white;
+}
+
+.baseother ul li.acess{
+    width: 195px;
+    padding: 12px;
+    opacity: 1;
+    border-right: 3px solid gray;
+    font-size:1em;
+    text-align: center;
+    display: inline-block;
+}
+
+/*LINK DE ACESSO AO QUARTO*/
+
+.acess a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/*PREÇO DOS QUARTOS*/
+
+.baseother ul li.price{
+    padding: 12px 6px 12px 9px;
+    font-size: large;
+    text-decoration: none;
+    color:#0ba11f;
+    background-color: rgb(226, 226, 226);
+}
+
+/*PREÇO ORIGINAL*/
+
+.baseother ul li.price sup,
+.baseother ul li.price del{
+    color:red;
+}
+
+/*QUARTA PARTE - RODAPÉ DO SITE*/
+
+footer{
+    background:rgb(44, 79, 173);
+    border-bottom: 0px;
+    position: absolute;
+}
+
+/*CAIXA DOS CARDS DO RODAPÉ*/
+
+#bottom{
+    padding-bottom: 10px;
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    border-bottom: 2px solid rgb(81, 97, 245);
+}
+
+/*CARDS DO RODAPÉ*/
+
+.foot{
+    width: 30%;
+    padding: 10px 8px 0px 8px;
+    color:rgb(233, 223, 223);
+}
+
+/*LINHA ENTRE RODAPÉS*/
+
+.line{
+    margin-top: 10px;
+    height: 80px;
+    border-left: 2px solid rgb(81, 97, 245);
+}
+
+/*ESTILIZANDO O TEXTO DOS RODAPÉS*/
+
+.foot .title{
+    color: white;
+    font-size: 1em;
+}
+
+/*ESTILIZANDO A MENÇÃO*/
+
+article{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+
+/*ESTILIZAÇÃO RESPONSIVA*/
+@media (min-width: 360px){
+
+    h1{
+        font-size: 1em;
+    }
+
+    .videoframe img{
+        width: 330px;
+        height: 180px;
+    }
+
+    .download{
+        padding: 10px;
+        margin: 0px;
+        height: 40px;
+        width: 230px;
+        position: relative;
+        left: 40px;
+        bottom: 16px;
+    }
+
+    .download a{
+        font-size: .8em;
+    }
+
+    .download small{
+        font-size: .7em;
+    }
+
+    .searchbox{
+        padding: 20px 0px 15px 0px;
+        width: 80%;
+    }
+
+    .searchbox h2{
+        font-size: 1.3em;
+    }
+    
+    .searchbox #form input{
+        width: 240px;
+        font-size: 1.2em;
+    }
+
+    .searchbox #form button{
+        font-size: 1em;
+        width: 120px;
+    }
+
+    #intermain h2{
+        padding-left: 20px;
+        font-size: 1.2em;
+    }
+
+    #intermain .locations .locationbox{
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    a.subtitle{
+        font-size: 1.2em;  
+    }
+
+    .others{
+        margin: 10px;
+        width: 333px;
+    }
+
+    .others h2{
+        font-size: 1.2em;
+    }
+
+    .baseother ul li.acess{
+        width: 134px;
+        font-size:1em;
+    }
+
+    .baseother ul li.price{
+        padding: 10px 9px 12px 9px;
+        font-size: 1.1em;
+    }
+
+    .foot .title{
+        font-size: 1em;
+    }
+
+    .foot p{
+        font-size: .8em;
+    }
+
+    article{
+        padding: 5px;
+    }
+
+}
+
+@media(min-width: 480px){
+
+    .videoframe img{
+        height: 280px;
+        width: 453px;
+    }
+
+    .download{
+        left: 210px;
+    }
+
+    .baseother ul li.acess{
+        width: 147px;
+        font-size:1em;
+    }
+
+    .baseother ul li.price{
+        padding: 10px 9px 12px 9px;
+        font-size: 1.1em;
+    }
+    
+}
+
+@media(max-width:960px){
+
+    header{
+        position:relative;
+    }
+
+    header button{
+        padding: 10px 15px 0px 15px;
+        display: inline;
+        float: right;
+    }
+
+    #menu ul{
+        display: none;
+        opacity: 1;
+        transition: .5s;
+        background-color: white;
+    }
+    
+    #menu ul li{
+        display:block;
+        margin: 0px;
+    }
+    
+    #menu ul li a{
+        padding: 15px;
+        width: 110px;
+        text-decoration: none; 
+        border-bottom: 3px solid rgb(0, 0, 0);
+        color:rgb(8, 8, 8);
+    }
+
+}
+
+@media(min-width: 960px){
+
+    #topmain section{
+        padding: 15px;
+        display:inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .videoframe img{
+        width: 540px;
+        height: 330px;
+    }
+
+    .download{
+        font-size: 1em;
+        width: 280px;
+        left: 260px;
+    }
+
+    .searchbox{
+        padding: 20px 0px 15px 15px;
+        width: 50%
+    }
+
+    .searchbox #form input{
+        width: 260px;
+        font-size: 1.2em;
+    }
+
+    .searchbox #form button{
+        font-size: 1em;
+        width: 120px;
+    }
+
+    #intermain .locations .locationbox{
+        width: 382px;
+        margin: 10px;
+    }
+
+}
